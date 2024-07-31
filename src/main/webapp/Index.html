@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="Style.css">
+<script type="text/javascript" src="Calc.js"></script>
+</head>
+<body>
+<input type="text" id="a" placeholder="min"/>
+<input type="text" id="b" placeholder="max"/>
+<input type="text" id="c" placeholder="res"/>
+<input type="button" value="sum" onclick="sum(document.getElementById('a').value,document.getElementById('b').value)"/>
+<input type="button" value="avg" onclick="avg(document.getElementById('a').value,document.getElementById('b').value)"/>
+<input type="button" value="check Range" onclick="check_Range(document.getElementById('a').value,document.getElementById('b').value)"/>
+<form action="check_digit.jsp">
+<input type="number" id="d" name="c_num" placeholder="card num"/>
+<input type="submit"/>
+</form>
+<form action="tri_check.jsp">
+<input type="text" name="nums" placeholder="a,b,c,d"/>
+<input type="submit"/>
+</form>
+<form action="check_Range.jsp">
+<input type="hidden" id="f" name="chk_r"/>
+<input type="submit"/>
+</form>
+<input type="text" id="g" placeholder="amt"/>
+<input type="button" value="exch rates" onclick="exchangerates(document.getElementById('g').value)"/>
+<hr>
+<form action="save_info.jsp">
+<input type="submit"/>
+</form>
+</body>
+</html>
